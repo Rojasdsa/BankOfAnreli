@@ -18,36 +18,29 @@
         <nav class="navbar navbar-expand-sm bg-dark">
             <div class="container-fluid">
 
-            <!-- LOGO -->
-            <div>
-                <!-- Añadido ruta destino al clickar el logo -->
-                <a class="navbar-brand" href="../views/login.php">
-                    <!-- Añadida clase 'logo-header' -->
-                    <img src="../assets/img/logo.png" class="logo-header" alt="logo">
-                </a>
-            </div>
+                <!-- LOGO -->
+                <div>
+                    <!-- Añadido ruta destino al clickar el logo -->
+                    <a class="navbar-brand" href="../views/login.php">
+                        <!-- Añadida clase 'logo-header' -->
+                        <img src="../assets/img/logo.png" class="logo-header" alt="logo">
+                    </a>
+                </div>
 
-            <!-- SECCIONES -->
-            <div class="navbar-collapse" id="navbarSupportedContent">
-                <!-- Añadimos seccion-fondo para moverlas a la derecha -->
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 seccion-fondo">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="../views/login.php">Inicio/Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  text-white" href="../views/signup.php">Registro</a>
-                    </li>
-                </ul>
-            </div>
+                <!-- SECCIONES -->
+                <div class="navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="../views/login.php">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-white" href="../views/signup.php">Registro</a>
+                        </li>
+                    </ul>
+                </div>
 
+
+            </div>
+        </nav>
 
     </div>
-    </nav>
-
-    </div>
-
-
-
-</body>
-
-</html>
