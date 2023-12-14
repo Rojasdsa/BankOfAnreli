@@ -16,7 +16,8 @@ CREATE TABLE Usuario (
     Ciudad VARCHAR(255),
     Provincia VARCHAR(255),
     Pais VARCHAR(255) NOT NULL,
-    Rol ENUM('Admin', 'Cliente') NOT NULL
+    Rol ENUM('Admin', 'Cliente') NOT NULL,
+    Contraseña VARCHAR(30) NOT NULL
 );
 
 -- Crear la tabla Cuenta
@@ -24,7 +25,7 @@ CREATE TABLE Cuenta (
     ID_cuenta INT PRIMARY KEY AUTO_INCREMENT,
     IBAN VARCHAR(30),
     Saldo DECIMAL(10, 2),
-    Divisa VARCHAR(10),
+    Divisa VARCHAR(10) DEFAULT '€',
     ID_usuario INT,
     FOREIGN KEY (ID_usuario) REFERENCES Usuario(ID_usuario)
 );
@@ -76,14 +77,15 @@ CREATE TABLE Mensaje (
 );
 
 -- Insertar datos en la tabla Usuario
-INSERT INTO Usuario (Nombre, Apellido, DNI, Email, Fecha_nac, Foto, Cod_postal, Direccion, Ciudad, Provincia, Pais, Rol)
+INSERT INTO Usuario (Nombre, Apellido, DNI, Email, Fecha_nac, Foto, Cod_postal, Direccion, Ciudad, Provincia, Pais, Rol, Contraseña)
 VALUES
-    ('John', 'Doe', '123456789', 'john.doe@example.com', '1990-01-15', 'john.jpg', '12345', '123 Main St', 'Anytown', 'Anyprovince', 'AnyCountry', 'Cliente'),
-    ('Jane', 'Smith', '987654321', 'jane.smith@example.com', '1985-08-22', 'jane.jpg', '54321', '456 Oak St', 'Another City', 'Another Province', 'AnotherCountry', 'Admin'),
-    ('Alma', 'Palomino', '9876543210', 'alma.palomino@example.com', '1995-05-20', 'alma.jpg', '54321', '789 Pine St', 'Newtown', 'Newprovince', 'NewCountry', 'Cliente'),
-	('Carlos', 'Gomez', '456789012', 'carlos.gomez@example.com', '1988-06-10', 'carlos.jpg', '54321', '789 Pine St', 'Newtown', 'Newprovince', 'NewCountry', 'Cliente'),
-    ('Luisa', 'Hernandez', '890123456', 'luisa.hernandez@example.com', '1992-09-25', 'luisa.jpg', '98765', '456 Maple St', 'Cityville', 'Cityprovince', 'CityCountry', 'Cliente'),
-    ('Elena', 'Santos', '234567890', 'elena.santos@example.com', '1980-03-18', 'elena.jpg', '67890', '123 Oak St', 'Villagetown', 'Villageprovince', 'VillageCountry', 'Admin');
+    ('Admin', 'Master', '00000000X', 'admin@boa.com', '2023-12-15', 'admin.jpg', '00000', 'Nowhere', 'Nowhere', 'Nowhere', 'Nowhere', 'Admin','Admin'),
+    ('John', 'Doe', '12345678N', 'john.doe@example.com', '1990-01-15', 'john.jpg', '12345', '123 Main St', 'Anytown', 'Anyprovince', 'AnyCountry', 'Cliente','123123'),
+    ('Jane', 'Smith', '98765432N', 'jane.smith@example.com', '1985-08-22', 'jane.jpg', '54321', '456 Oak St', 'Another City', 'Another Province', 'AnotherCountry', 'Cliente','123123'),
+    ('Alma', 'Palomino', '987654321N', 'alma.palomino@example.com', '1995-05-20', 'alma.jpg', '54321', '789 Pine St', 'Newtown', 'Newprovince', 'NewCountry', 'Cliente','123123'),
+	('Carlos', 'Gomez', '45678901N', 'carlos.gomez@example.com', '1988-06-10', 'carlos.jpg', '54321', '789 Pine St', 'Newtown', 'Newprovince', 'NewCountry', 'Cliente','123123'),
+    ('Luisa', 'Hernandez', '89012345N', 'luisa.hernandez@example.com', '1992-09-25', 'luisa.jpg', '98765', '456 Maple St', 'Cityville', 'Cityprovince', 'CityCountry', 'Cliente','123123'),
+    ('Elena', 'Santos', '23456789N', 'elena.santos@example.com', '1980-03-18', 'elena.jpg', '67890', '123 Oak St', 'Villagetown', 'Villageprovince', 'VillageCountry', 'Cliente','123123');
 
 -- Insertar datos en la tabla Cuenta
 INSERT INTO Cuenta (IBAN, Saldo, Divisa, ID_usuario)
