@@ -1,9 +1,9 @@
 
 <?php include_once("../includes/header.php"); ?>
 
-<main>
+<div class="container-fluid text-center">
   <h2>Préstamos</h2>
   <!-- lógica de PHP -->
-</main>
+</div>
 
 <?php include_once("../includes/footer.php"); ?>

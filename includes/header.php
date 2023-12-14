@@ -21,7 +21,7 @@
                 <!-- LOGO -->
                 <div>
                     <!-- Añadido ruta destino al clickar el logo -->
-                    <a class="navbar-brand" href="../views/login.php">
+                    <a class="navbar-brand" href="../views/welcome.php">
                         <!-- Añadida clase 'logo-header' -->
                         <img src="../assets/img/logo.png" class="logo-header" alt="logo">
                     </a>
@@ -29,7 +29,8 @@
 
                 <!-- SECCIONES -->
                 <div class="navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <hr class="text-white">
+                    <ul class="navbar-nav me-auto mb-0">
                         <li class="nav-item">
                             <a class="nav-link text-white" href="../views/welcome.php">Inicio</a>
                         </li>
