@@ -15,8 +15,8 @@
 <body>
     <div class="header">
         <!-- Añadido bg-dark al fondo -->
-        <nav class="navbar navbar-expand-sm bg-dark>
-            <div class=" container-fluid">
+        <nav class="navbar navbar-expand-sm bg-dark">
+            <div class="container-fluid">
 
             <!-- LOGO -->
             <div>
