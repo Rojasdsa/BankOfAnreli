@@ -8,3 +8,7 @@
 </main>
 
 <?php include_once("../includes/footer.php"); ?>
+
+<button type="button" class="btn btn-warning">
+  <a href="login.php" class="text-decoration-none text-white">Registrarse</a>
+</button>
