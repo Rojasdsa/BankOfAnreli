@@ -29,8 +29,7 @@
 
             <!-- SECCIONES -->
             <div class="navbar-collapse" id="navbarSupportedContent">
-                <!-- Añadimos seccion-fondo para moverlas a la derecha -->
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 seccion-fondo">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active text-white" aria-current="page" href="../views/login.php">Inicio/Login</a>
                     </li>
