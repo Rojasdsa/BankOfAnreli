@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bank of Anreli</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <!-- Más adelante se añadira una ruta por php que llame a todos los archivos JS -->
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/jquery.min.js"></script>
@@ -15,7 +15,7 @@
 <body>
     <div class="header">
         <!-- Añadido bg-dark al fondo -->
-        <nav class="navbar navbar-expand-sm bg-dark">
+        <nav class="navbar navbar-expand-sm">
             <div class="container-fluid">
 
                 <!-- LOGO -->
